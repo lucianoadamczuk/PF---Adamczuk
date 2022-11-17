@@ -1,0 +1,45 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+
+        .textContainer{
+            width: 100%;
+            height: 100%;
+
+            @include flexStructureColumn;
+            
+            position: absolute;
+
+                .titleContainer{
+                    width: 100%;
+                    height: 65%;
+
+                    padding-top: 50px;
+        
+                        h1{
+                            padding-left: 30px;
+                        }
+                }
+
+                .subTitleContainer{
+                    width: 100%;
+                    height: 25%;
+                    
+                    
+                    @include flexStructureColumn;
+                    justify-content: end;
+                    
+                   
+                }
+
+        }
+        
+        video{
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+}

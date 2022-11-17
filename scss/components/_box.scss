@@ -1,0 +1,54 @@
+// this box belongs to the menu page
+.box{
+    width: 300px;
+    height: auto;
+
+    margin: 20px;
+    padding: 10px 20px 5px 20px;
+    background-color: $color__box;
+
+    @include flexStructureColumn;
+
+    border-radius: 10px;
+
+        .titleContainer{
+            width: 100%;
+            height: 10%;
+
+            margin-bottom: 15px;
+            text-align: center;
+
+                
+            font-size: 3rem;
+            
+        }
+
+        .foodAndPriceContainer{
+            width: 100%;
+            height: 90%;
+
+            @include flexStructureColumn;
+
+                .group{
+                    width: 100%;
+                    @include flexStructureRow;
+
+                        .food, .price{
+                            width: 20%;
+                            height: 30px;
+                            font-size: 2rem;
+                            font-style: italic;
+                        }
+
+                        .line{
+                            width: 50%;
+
+                            margin-right: 5px;
+                            border-bottom: 1px dashed black;
+                        }
+                }
+
+        }
+}
+    
+

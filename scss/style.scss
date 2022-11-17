@@ -1,0 +1,24 @@
+// base
+@import "./base/base";
+@import "./base/font";
+@import "./base/mixins";
+@import "./base/variables";
+
+// layout
+@import "./layout/nav";
+@import "./layout/section";
+@import "./layout/backgrundVideo";
+@import "./layout/footer";
+
+// components
+@import "./components/carousel";
+@import "./components/button";
+@import "./components/formulary";
+@import "./components/box";
+@import "./components/boxReference";
+
+
+// pages
+@import "./pages/index";
+@import "./pages/menu";
+@import "./pages/reserve";

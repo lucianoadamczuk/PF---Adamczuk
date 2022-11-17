@@ -1,0 +1,569 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: "Crimson Text", serif;
+  text-shadow: 1px 5px 10px black;
+  color: white;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-shadow: 1px 5px 10px black;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h6 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.buttonContainer a:hover {
+  color: black;
+}
+
+.socialMedia a:hover {
+  border-bottom: 0;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 20rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 4.5rem;
+  }
+  h6 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  h4 {
+    font-size: 8rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+nav .logotipo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav .logotipo img {
+  width: 70px;
+  height: 40px;
+}
+nav .link {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: right;
+  padding-right: 30px;
+}
+nav .link a {
+  margin: 0 5px 0 5px;
+  font-size: 2rem;
+  display: none;
+}
+nav .link .reserve {
+  display: block;
+}
+
+@media screen and (min-width: 500px) {
+  nav .link a {
+    display: flex;
+  }
+}
+section {
+  width: 100%;
+  height: 100vh;
+  padding: 10vh 20px 10px 20px;
+  background-color: #0D0D0D;
+}
+section p {
+  padding-left: 10px;
+}
+section .textContainer {
+  width: 100%;
+  height: 40%;
+  margin-top: 20px;
+}
+section .carouselContainer {
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
+  position: relative;
+}
+section .carouselContainer .buttonContainer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 20%;
+  z-index: 3;
+}
+
+.index__references {
+  width: 100%;
+  height: 100vh;
+  padding: 10vh 20px 10px 20px;
+  background-color: #0D0D0D;
+}
+.index__references .textContainer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index__references .formContainer {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__2 {
+  width: 100%;
+  height: 70%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section__2 .titleContainer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__2 .boxContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section__2 .formAndFooterContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__2 .formAndFooterContainer .formContainer {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+  section {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  section .textContainer {
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+  }
+  section .textContainer p {
+    margin-top: 50px;
+  }
+  section .carouselContainer {
+    width: 60%;
+    height: 100%;
+  }
+  .index__references {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .index__references .textContainer {
+    width: 40%;
+    height: 100%;
+  }
+  .index__references .formContainer {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .index__references .formContainer form {
+    margin-bottom: 10px;
+  }
+}
+.backgroundVideo {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #0D0D0D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .socialMedia {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .socialMedia .instagram svg, footer .socialMedia .facebook svg, footer .socialMedia .youtube svg {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+footer .legal {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .legal a {
+  margin: 10px;
+}
+
+.footer__2 {
+  height: 25vh;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+.carousel, .carousel-inner, .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel img, .carousel-inner img, .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.myButton {
+  width: 100px;
+  height: 60px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px rgb(0, 0, 0);
+}
+
+.myButtonAnimation {
+  -webkit-animation-name: myButtonAnimation;
+          animation-name: myButtonAnimation;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes myButtonAnimation {
+  0% {
+    margin-bottom: 10px;
+  }
+  50% {
+    margin-bottom: 30px;
+  }
+  100% {
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes myButtonAnimation {
+  0% {
+    margin-bottom: 10px;
+  }
+  50% {
+    margin-bottom: 30px;
+  }
+  100% {
+    margin-bottom: 10px;
+  }
+}
+.myButtonFormulary {
+  width: 100px;
+  height: 40px;
+  background-color: #F2F2F2;
+  border: 0;
+  border-radius: 10px;
+}
+
+form {
+  width: 300px;
+  height: 360px;
+  background-color: rgba(255, 255, 255, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+form input, form select {
+  width: 80%;
+  height: 8%;
+}
+form input::-moz-placeholder {
+  color: black;
+}
+form input:-ms-input-placeholder {
+  color: black;
+}
+form input::placeholder {
+  color: black;
+}
+form textarea {
+  width: 80%;
+  height: 20%;
+  resize: none;
+}
+form label {
+  font-size: 1.5rem;
+}
+form input, form select, form textarea {
+  margin: 5px;
+  padding-left: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid;
+  border-radius: 5px;
+}
+form input, form select, form textarea:focus {
+  outline: none;
+}
+
+.box {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  padding: 10px 20px 5px 20px;
+  background-color: rgba(128, 128, 128, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.box .titleContainer {
+  width: 100%;
+  height: 10%;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 3rem;
+}
+.box .foodAndPriceContainer {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box .foodAndPriceContainer .group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box .foodAndPriceContainer .group .food, .box .foodAndPriceContainer .group .price {
+  width: 20%;
+  height: 30px;
+  font-size: 2rem;
+  font-style: italic;
+}
+.box .foodAndPriceContainer .group .line {
+  width: 50%;
+  margin-right: 5px;
+  border-bottom: 1px dashed black;
+}
+
+.boxReference {
+  width: 80%;
+  height: 220px;
+  margin: 20px;
+  padding: 10px 20px 5px 20px;
+  background-color: rgba(128, 128, 128, 0.5);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-areas: "nameSurname nameSurname" "profilePhoto comentary" "profilePhoto date";
+  border-radius: 10px;
+}
+.boxReference .profilePhoto {
+  grid-area: profilePhoto;
+}
+.boxReference .profilePhoto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.boxReference .nameSurname {
+  grid-area: nameSurname;
+}
+.boxReference .comentary {
+  grid-area: comentary;
+  overflow-y: scroll;
+}
+.boxReference .date {
+  grid-area: date;
+  text-align: right;
+}
+
+@media screen and (min-width: 1000px) {
+  .boxReference {
+    width: 400px;
+    height: 250px;
+  }
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.hero .textContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.hero .textContainer .titleContainer {
+  width: 100%;
+  height: 65%;
+  padding-top: 50px;
+}
+.hero .textContainer .titleContainer h1 {
+  padding-left: 30px;
+}
+.hero .textContainer .subTitleContainer {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+}
+.hero video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fullScreenVideo {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fullScreenVideo {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
