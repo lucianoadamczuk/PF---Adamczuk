@@ -54,7 +54,7 @@
         }
 }
 
-@media screen and (min-height:635px) and (min-width: 1000px) {
+@media screen and (max-height:635px) and (min-width: 1000px) {
     .boxReference{
         width: 400px;
         height: 250px;
