@@ -54,7 +54,7 @@
         }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) and (orientation: landscape){
     .boxReference{
         width: 400px;
         height: 250px;

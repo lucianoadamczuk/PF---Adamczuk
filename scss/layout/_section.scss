@@ -106,7 +106,7 @@ section{
 
         
 // media
-@media screen and (min-width:1000px){
+@media screen and (min-width:1000px) and (orientation: landscape) {
 
     section{
         padding-bottom: 50px;
