@@ -112,7 +112,7 @@ h6 {
     font-size: 2rem;
   }
 }
-@media screen and (max-height: 635px) and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   h4 {
     font-size: 8rem;
   }
@@ -251,7 +251,7 @@ section .formContainer {
   align-items: center;
 }
 
-@media screen and (min-height: 635px) and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   section {
     padding-bottom: 50px;
     display: flex;
@@ -466,7 +466,7 @@ form input, form select, form textarea:focus {
   height: 100%;
 }
 
-@media screen and (max-height: 635px) and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   form, .reserve-form {
     width: 400px;
     height: 400px;
@@ -562,7 +562,7 @@ form input, form select, form textarea:focus {
   align-items: flex-end;
 }
 
-@media screen and (max-height: 635px) and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .boxReference {
     width: 400px;
     height: 250px;
